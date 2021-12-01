@@ -62,6 +62,11 @@ def rprocessL(letter):
     con = int(math.sqrt((letter - 4) / 4))
     return chr(con)
 
+'''
+Input: none
+Output: Decrypted string
+Acts as a retriver of all the different decription processes and returns the decrypted string
+'''
 def decryption_portal():
     print("Enter desired text here\n>>", end = " ")
     To_Decrypt = str(input())
@@ -88,6 +93,7 @@ def decryption_portal():
         decryptedText += y
     print(decryptedText)
 
+# The main body iteration through the program until terminated by user
 while(True):
     print("Welcome to encryption corp.\nPlease enter desired action.\nA) Encrypt\nB) Decrypt\nC) Exit")
     u = input()
